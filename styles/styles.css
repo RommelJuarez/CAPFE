@@ -114,7 +114,7 @@ body {
 
 
 .hero-container {
-  background-image: url('/images/hero.jpeg');
+  background-image: url('/images/hero.jpg');
   background-size: cover;
   background-position: center;
   height: 80vh;
