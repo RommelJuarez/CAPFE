@@ -107,7 +107,7 @@ body {
 }
 
 .hero-overlay {
-  background: rgba(40, 66, 89, 0.5); /* semitransparente azul oscuro */
+  background: rgba(40, 66, 89, 0.5); /* semitransparente azul oscuro cambios en css */
   width: 100%;
   height: 100%;
   display: flex;
