@@ -27,7 +27,9 @@ body {
   color: var(--azul-oscuro);
   transition: color 0.3s ease;
 }
-
+.logo-main{
+  margin-left: 100px;
+}
 .nav-link-custom:hover {
   color: var(--amarillo);
   text-decoration: none;
