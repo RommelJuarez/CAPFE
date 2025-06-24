@@ -165,3 +165,13 @@ footer a:hover i {
     transform: translateX(-175.5%);
   }
 }
+
+@media (max-width: 768px) {
+ 
+  .hero-container {
+  
+  background-position:  center;
+  
+  
+}
+}
