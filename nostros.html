@@ -4,25 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/images/favicon.png" type="image/png">
   <title>CAPFE</title>
 
   <!-- Meta SEO -->
   <meta name="description"
-    content="CAPFE - Prepárate para tu futuro. Conviértete en parte de CAPFE y logra tus metas universitarias." />
-  <meta name="keywords" content="CAPFE, universidad, admisión, simuladores, inscripción" />
+    content="Conoce más sobre CAPFE: nuestro propósito, misión, visión y los servicios académicos que ofrecemos en todos los niveles." />
+  <meta name="keywords"
+    content="CAPFE, Nosotros, preuniversitario, misión, visión, asesorías, nivelación, tutorías, clases dirigidas" />
   <meta name="robots" content="index, follow" />
 
   <!-- Redes Sociales / Open Graph -->
-  <meta property="og:title" content="CAPFE" />
-  <meta property="og:description" content="Prepárate para tu futuro con CAPFE" />
+  <meta property="og:title" content="Nosotros | CAPFE" />
+  <meta property="og:description"
+    content="Descubre quiénes somos y qué servicios ofrecemos en CAPFE para tu formación académica." />
   <meta property="og:image" content="/images/logo.jpeg" />
   <meta property="og:url" content="https://capfedu.com/" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CAPFE" />
-  <meta name="twitter:description" content="Prepárate para tu futuro con CAPFE" />
+  <meta name="twitter:title" content="Nosotros | CAPFE" />
+  <meta name="twitter:description"
+    content="Descubre qué es CAPFE, nuestro objetivo y los servicios académicos que ofrecemos." />
   <meta name="twitter:image" content="/images/logo.jpeg" />
 
   <!-- Font Awesome -->
@@ -34,9 +38,12 @@
 
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/nostros.css" />
 </head>
 
 <body>
+  <!-- Contenedor Sticky para Navbar + Barra secundaria -->
+<div class="sticky-top">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container-fluid">
@@ -49,7 +56,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarTop">
         <ul class="navbar-nav me-4 mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link nav-link-custom " href="/index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="/index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link nav-link-custom active" href="/nostros.html">Nosotros</a></li>
           <li class="nav-item"><a class="nav-link nav-link-custom" href="/admision.html">Admisión</a></li>
           <li class="nav-item"><a class="nav-link nav-link-custom" href="/simuladores.html">Simuladores</a></li>
@@ -65,8 +72,91 @@
 
   <!-- Barra secundaria -->
   <div class="bar-nav"></div>
+</div>
 
+  <!-- CONTENIDO SECCION NOSOTROS -->
+<main class="py-5">
+  <div class="container">
+    <!-- Quiénes somos -->
+    <section class="mb-5">
+      <h2 class="fw-bold text-azul text-center mb-4">Quiénes somos</h2>
+      <p class="lead text-center">
+        Somos CAPFE, un centro académico dedicado a potenciar el rendimiento de estudiantes de todos los niveles a través de clases preuniversitarias, dirigidas y tutorías personalizadas.
+      </p>
+    </section>
 
+    <!-- Misión y visión -->
+    <section class="mb-5">
+      <div class="row text-center">
+        <div class="col-md-6 mb-4">
+          <div class="p-4 bg-light shadow rounded h-100">
+            <h3 class="text-warning fw-bold">Nuestra Misión</h3>
+            <p>Brindar formación académica integral, con un enfoque personalizado, para garantizar el éxito en exámenes de admisión y el fortalecimiento escolar.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="p-4 bg-light shadow rounded h-100">
+            <h3 class="text-success fw-bold">Nuestra Visión</h3>
+            <p>Ser el centro académico de referencia en Ecuador, comprometido con el éxito académico de niños, jóvenes y adultos mediante metodologías efectivas e innovadoras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section>
+      <h2 class="fw-bold text-azul text-center mb-4">Servicios que ofrecemos</h2>
+      <div class="row g-4">
+        <!-- Servicio Card -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm servicio-card">
+            <img src="/images/hero.webp" class="card-img-top" alt="Asesorías Académicas" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Asesorías Académicas</h5>
+              <p class="card-text">Orientación y planificación del estudio para alcanzar tus objetivos académicos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm servicio-card">
+            <img src="/images/hero.webp" class="card-img-top" alt="Nivelación y Tutorías" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Nivelación y Tutorías</h5>
+              <p class="card-text">Refuerzo en asignaturas desde el nivel escolar hasta universitario.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm servicio-card">
+            <img src="/images/hero.webp" class="card-img-top" alt="Clases de Matemáticas" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Matemáticas y Cálculo</h5>
+              <p class="card-text">Tutorías personalizadas en Matemáticas, Geometría y Cálculo diferencial e integral.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm servicio-card">
+            <img src="/images/hero.webp" class="card-img-top" alt="Clases de Ciencias" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Física y Química</h5>
+              <p class="card-text">Refuerza tus conocimientos en ciencias con clases claras y aplicadas a tus exámenes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm servicio-card">
+            <img src="/images/hero.webp" class="card-img-top" alt="Verbal e Inglés" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Verbal e Inglés</h5>
+              <p class="card-text">Mejora tu comprensión lectora, redacción y habilidades en inglés para contextos académicos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
 
   <!-- Footer -->
   <footer class="bg-light text-dark pt-4 border-top">
