@@ -2,11 +2,86 @@
     color: var(--azul-oscuro);
 }
 
+
+
 .servicio-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
-.servicio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 66, 89, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.servicio-card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Quiénes somos */
+section h2.text-azul {
+  font-size: 2.5rem; /* Título principal más grande */
+}
+
+section p.lead {
+  font-size: 1.25rem; /* Texto descriptivo más legible */
+  font-weight: 600;
+}
+
+/* Misión y Visión */
+section .bg-light h3 {
+  font-size: 1.8rem; /* Subtítulos (misión y visión) */
+  font-weight: 600;
+}
+
+section .bg-light p {
+  font-size: 1.1rem; /* Texto dentro de tarjetas */
+  font-weight: 600;
+}
+
+/* Estilo para aumentar la fuente en los modales */
+.modal-content {
+  font-size: 1.15rem; /* Aumenta el tamaño de texto general */
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Títulos de los modales más grandes y negrita */
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Centrar el modal verticalmente */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+/* Ajuste extra para que no se desborde en pantallas pequeñas */
+@media (max-width: 576px) {
+  .modal-content {
+    font-size: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-dialog {
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
 }

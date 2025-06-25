@@ -35,40 +35,112 @@
 
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/simuladores.css" />
 </head>
 
 <body>
   <!-- Contenedor Sticky para Navbar + Barra secundaria -->
-<div class="sticky-top">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="/images/logo.jpeg" class="logo-main" alt="Logo CAPFE" height="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
-        aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarTop">
-        <ul class="navbar-nav me-4 mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/nostros.html">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/admision.html">Admisión</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom active" href="/simuladores.html">Simuladores</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/contacto.html">Contacto</a></li>
-        </ul>
-        <div class="d-flex gap-2">
-          <button class="btn btn-warning fw-bold" type="button">¡Inscríbete ahora!</button>
-          <button class="btn btn-outline-secondary fw-bold" type="button">Contáctanos</button>
+  <div class="sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="/images/logo.jpeg" class="logo-main" alt="Logo CAPFE" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+          aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTop">
+          <ul class="navbar-nav me-4 mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/nostros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/admision.html">Admisión</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom active" href="/simuladores.html">Simuladores</a>
+            </li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/contacto.html">Contacto</a></li>
+          </ul>
+          <div class="d-flex gap-2">
+            <button class="btn btn-warning fw-bold" type="button">¡Inscríbete ahora!</button>
+            <button class="btn btn-outline-secondary fw-bold" type="button">Contáctanos</button>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Barra secundaria -->
-  <div class="bar-nav"></div>
-</div>
+    <!-- Barra secundaria -->
+    <div class="bar-nav"></div>
+  </div>
+
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="fw-bold text-center mb-5">Simuladores CAPFE</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        <!-- Card Numérico -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="/images/numerico2.png" class="card-img-top" alt="Simulador Numérico" height="270">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Razonamiento Numérico</h5>
+              <div class="mt-auto text-center">
+                <a href="#" class="btn simu-button fw-bold" target="_blank">
+                  Ver simulador <i class="fas fa-arrow-up-right-from-square ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Verbal -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="/images/verbal.png" class="card-img-top" alt="Simulador Verbal" height="270">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Razonamiento Verbal</h5>
+              <div class="mt-auto text-center">
+                <a href="#" class="btn simu-button fw-bold" target="_blank">
+                  Ver simulador <i class="fas fa-arrow-up-right-from-square ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Abstracto -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="/images/concentra.png" class="card-img-top" alt="Simulador Concentración" height="270">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Atención y Concentración</h5>
+              <div class="mt-auto text-center">
+                <a href="#" class="btn simu-button fw-bold" target="_blank">
+                  Ver simulador <i class="fas fa-arrow-up-right-from-square ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Lógico -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="/images/logico.png" class="card-img-top" alt="Simulador Lógico" height="270">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Razonamiento Lógico</h5>
+              <div class="mt-auto text-center">
+                <a href="#" class="btn simu-button fw-bold" target="_blank">
+                  Ver simulador <i class="fas fa-arrow-up-right-from-square ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
 
 
 

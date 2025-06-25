@@ -5,71 +5,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/images/favicon.png" type="image/png">
-  <title>CAPFE</title>
+  <title>Admisión | CAPFE</title>
 
   <!-- Meta SEO -->
   <meta name="description"
-    content="CAPFE - Prepárate para tu futuro. Conviértete en parte de CAPFE y logra tus metas universitarias." />
-  <meta name="keywords" content="CAPFE, universidad, admisión, simuladores, inscripción" />
+    content="Infórmate sobre el proceso de admisión en CAPFE. Conoce los requisitos, horarios y recibe ayuda personalizada de un asesor." />
+  <meta name="keywords"
+    content="admisión CAPFE, requisitos de ingreso, asesor académico, inscripciones, horarios clases" />
   <meta name="robots" content="index, follow" />
 
   <!-- Redes Sociales / Open Graph -->
-  <meta property="og:title" content="CAPFE" />
-  <meta property="og:description" content="Prepárate para tu futuro con CAPFE" />
+  <meta property="og:title" content="Admisión | CAPFE" />
+  <meta property="og:description"
+    content="Conoce cómo ser parte de CAPFE y accede a nuestras asesorías personalizadas." />
   <meta property="og:image" content="/images/logo.jpeg" />
-  <meta property="og:url" content="https://capfedu.com/" />
+  <meta property="og:url" content="https://capfedu.com/admision.html" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CAPFE" />
-  <meta name="twitter:description" content="Prepárate para tu futuro con CAPFE" />
+  <meta name="twitter:title" content="Admisión | CAPFE" />
+  <meta name="twitter:description"
+    content="Descubre cómo acceder a CAPFE con un solo requisito y atención personalizada." />
   <meta name="twitter:image" content="/images/logo.jpeg" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- CSS personalizado -->
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/admision.css" />
 </head>
 
 <body>
-  <!-- Contenedor Sticky para Navbar + Barra secundaria -->
-<div class="sticky-top">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="/images/logo.jpeg" class="logo-main" alt="Logo CAPFE" height="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
-        aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarTop">
-        <ul class="navbar-nav me-4 mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/nostros.html">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom active" href="/admision.html">Admisión</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/simuladores.html">Simuladores</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/contacto.html">Contacto</a></li>
-        </ul>
-        <div class="d-flex gap-2">
-          <button class="btn btn-warning fw-bold" type="button">¡Inscríbete ahora!</button>
-          <button class="btn btn-outline-secondary fw-bold" type="button">Contáctanos</button>
+  <div class="sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/images/logo.jpeg" class="logo-main" alt="Logo CAPFE" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+          aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTop">
+          <ul class="navbar-nav me-4 mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/nostros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom active" href="/admision.html">Admisión</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/simuladores.html">Simuladores</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/contacto.html">Contacto</a></li>
+          </ul>
+          <div class="d-flex gap-2">
+            <button class="btn btn-warning fw-bold">¡Inscríbete ahora!</button>
+            <button class="btn btn-outline-secondary fw-bold">Contáctanos</button>
+          </div>
         </div>
       </div>
+    </nav>
+    <div class="bar-nav"></div>
+  </div>
+
+  <!-- Contenido principal -->
+  <main class="py-5">
+    <div class="container">
+      <section class="mb-5 ">
+        <h1 class="fw-bold text-azul mb-4">Requisitos de Admisión</h1>
+        <p >Para ser admitido en CAPFE solo necesitas presentar una <strong>copia de tu cédula</strong>.
+          ¡Así de fácil!</p>
+      </section>
+
+      <section class="mb-5 ">
+        <h2 class="fw-bold text-warning mb-4">Horarios</h2>
+        <p >Nos adaptamos a tu disponibilidad. <strong>Las clases se agendan con cita previa</strong> para
+          brindarte un horario personalizado que se ajuste a tus necesidades.</p>
+      </section>
+
+      <section class="asesor">
+        <h2 class="fw-bold text-success mb-4">¿Necesitas ayuda?</h2>
+        <p class="mb-4">Nuestro equipo de asesores está listo para resolver tus dudas y acompañarte durante el
+          proceso de inscripción.</p>
+        <a href="#contacto" class="btn btn-warning btn-lg fw-bold">Contacta un asesor</a>
+      </section>
     </div>
-  </nav>
-
-  <!-- Barra secundaria -->
-  <div class="bar-nav"></div>
-</div>
-
+  </main>
 
   <!-- Footer -->
   <footer class="bg-light text-dark pt-4 border-top">
@@ -83,11 +107,11 @@
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold">Enlaces</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-decoration-none text-dark">Inicio</a></li>
-            <li><a href="#" class="text-decoration-none text-dark">Nosotros</a></li>
-            <li><a href="#" class="text-decoration-none text-dark active">Admisión</a></li>
-            <li><a href="#" class="text-decoration-none text-dark">Simuladores</a></li>
-            <li><a href="#" class="text-decoration-none text-dark">Contacto</a></li>
+            <li><a href="/index.html" class="text-decoration-none text-dark">Inicio</a></li>
+            <li><a href="/nostros.html" class="text-decoration-none text-dark">Nosotros</a></li>
+            <li><a href="/admision.html" class="text-decoration-none text-dark active">Admisión</a></li>
+            <li><a href="/simuladores.html" class="text-decoration-none text-dark">Simuladores</a></li>
+            <li><a href="/contacto.html" class="text-decoration-none text-dark">Contacto</a></li>
           </ul>
         </div>
         <div class="col-md-4 mb-4">

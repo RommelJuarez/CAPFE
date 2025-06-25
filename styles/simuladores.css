@@ -1,0 +1,32 @@
+.simu-button{
+  background-color: var(--amarillo);
+  color: var(--azul-oscuro);
+  padding: 6px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 25px;
+  align-self: center;
+}
+
+.simu-button:hover {
+  background-color: var(--amarillo-oscuro);
+  color: white;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
