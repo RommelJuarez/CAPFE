@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/images/favicon.png" type="image/png">
-  <title>CAPFE</title>
+  <title>Nosotros | CAPFE</title>
 
   <!-- Meta SEO -->
   <meta name="description"
@@ -43,229 +43,249 @@
 
 <body>
   <!-- Contenedor Sticky para Navbar + Barra secundaria -->
-<div class="sticky-top">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="/images/logo.jpeg" class="logo-main" alt="Logo CAPFE" height="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
-        aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarTop">
-        <ul class="navbar-nav me-4 mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom active" href="/nostros.html">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/admision.html">Admisión</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/simuladores.html">Simuladores</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="/contacto.html">Contacto</a></li>
-        </ul>
-        <div class="d-flex gap-2">
-          <button class="btn btn-warning fw-bold" type="button">¡Inscríbete ahora!</button>
-          <button class="btn btn-outline-secondary fw-bold" type="button">Contáctanos</button>
+  <div class="sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="/images/logo.jpeg" class="logo-main" alt="Logo CAPFE" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+          aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTop">
+          <ul class="navbar-nav me-4 mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom active" href="/nostros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/admision.html">Admisión</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/simuladores.html">Simuladores</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="/contacto.html">Contacto</a></li>
+          </ul>
+          <div class="d-flex gap-2">
+            <button class="btn btn-warning fw-bold" type="button">¡Inscríbete ahora!</button>
+            <button class="btn btn-outline-secondary fw-bold" type="button">Contáctanos</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Barra secundaria -->
+    <div class="bar-nav"></div>
+  </div>
+  <!-- CONTENIDO SECCION NOSOTROS -->
+  <main class="py-5">
+    <div class="container">
+      <!-- Quiénes somos -->
+      <section class="mb-5">
+        <h2 class="fw-bold text-azul text-center mb-4">Quiénes somos</h2>
+        <p class="lead text-center">
+          Somos CAPFE, un centro académico dedicado a potenciar el rendimiento de estudiantes de todos los niveles a
+          través de clases preuniversitarias, dirigidas y tutorías personalizadas. Nuestro compromiso es con la
+          excelencia educativa y el desarrollo integral.
+        </p>
+      </section>
+
+      <!-- Misión y visión -->
+      <section class="mb-5">
+        <div class="row text-center">
+          <div class="col-md-6 mb-4">
+            <div class="p-4 bg-light shadow rounded h-100">
+              <h3 class="text-warning fw-bold">Nuestra Misión</h3>
+              <p>Brindar una formación académica integral y personalizada que permita a nuestros estudiantes superar los
+                retos de los exámenes de admisión, fortalecer sus conocimientos escolares y desarrollar habilidades
+                clave para su futuro. Ofrecemos clases preuniversitarias, dirigidas y tutorías con enfoque humano y
+                pedagógico.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="p-4 bg-light shadow rounded h-100">
+              <h3 class="text-success fw-bold">Nuestra Visión</h3>
+              <p>Ser reconocidos como el centro académico líder en formación preuniversitaria y nivelación escolar en
+                Ecuador, transformando vidas a través de la educación, la innovación y el compromiso con la excelencia
+                educativa desde los primeros niveles hasta la universidad.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Servicios -->
+      <section>
+        <h2 class="fw-bold text-azul text-center mb-4">Servicios que ofrecemos</h2>
+        <div class="row g-4">
+          <!-- Servicio Card -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
+              <img src="/images/asesoria.webp" class="card-img-top servicio-img" alt="Asesorías Académicas"
+                loading="lazy" width="356" height="237">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Asesorías Académicas</h5>
+                <p class="card-text">Orientación y planificación del estudio para alcanzar tus objetivos académicos.</p>
+              </div>
+              <div class="card-overlay">
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalAsesoria">Ver más</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
+              <img src="/images/tutoria.webp" class="card-img-top servicio-img" alt="Nivelación y Tutorías"
+                loading="lazy" width="356" height="237">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Nivelación y Tutorías</h5>
+                <p class="card-text">Refuerzo en asignaturas desde el nivel escolar hasta universitario.</p>
+              </div>
+              <div class="card-overlay">
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalTutoria">Ver más</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
+              <img src="/images/mate.webp" class="card-img-top servicio-img" alt="Clases de Matemáticas" loading="lazy"
+                width="356" height="237">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Matemáticas y Cálculo</h5>
+                <p class="card-text">Tutorías personalizadas en Matemáticas, Geometría y Cálculo diferencial e integral.
+                </p>
+              </div>
+              <div class="card-overlay">
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMate">Ver más</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
+              <img src="/images/quimica.webp" class="card-img-top servicio-img" alt="Clases de Ciencias" loading="lazy"
+                width="356" height="237">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Física y Química</h5>
+                <p class="card-text">Refuerza tus conocimientos en ciencias con clases claras y aplicadas a tus
+                  exámenes.</p>
+              </div>
+              <div class="card-overlay">
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalCiencias">Ver más</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
+              <img src="/images/ingles.webp" class="card-img-top servicio-img" alt="Verbal e Inglés" loading="lazy"
+                width="356" height="237">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Verbal e Inglés</h5>
+                <p class="card-text">Mejora tu comprensión lectora, redacción y habilidades en inglés para contextos
+                  académicos.</p>
+              </div>
+              <div class="card-overlay">
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalIngles">Ver más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modales de Servicios -->
+  <!-- Asesorías Académicas -->
+  <div class="modal fade" id="modalAsesoria" tabindex="-1" aria-labelledby="modalAsesoriaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAsesoriaLabel">Asesorías Académicas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Te ayudamos a definir estrategias de estudio personalizadas y organizadas para alcanzar tus metas educativas.
+          Nuestro equipo profesional te guiará paso a paso en el proceso académico.
+        </div>
+        <div class="modal-footer">
+          <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
         </div>
       </div>
     </div>
-  </nav>
-
-  <!-- Barra secundaria -->
-  <div class="bar-nav"></div>
-</div>
-<!-- CONTENIDO SECCION NOSOTROS -->
-<main class="py-5">
-  <div class="container">
-    <!-- Quiénes somos -->
-    <section class="mb-5">
-      <h2 class="fw-bold text-azul text-center mb-4">Quiénes somos</h2>
-      <p class="lead text-center">
-        Somos CAPFE, un centro académico dedicado a potenciar el rendimiento de estudiantes de todos los niveles a través de clases preuniversitarias, dirigidas y tutorías personalizadas. Nuestro compromiso es con la excelencia educativa y el desarrollo integral.
-      </p>
-    </section>
-
-    <!-- Misión y visión -->
-    <section class="mb-5">
-      <div class="row text-center">
-        <div class="col-md-6 mb-4">
-          <div class="p-4 bg-light shadow rounded h-100">
-            <h3 class="text-warning fw-bold">Nuestra Misión</h3>
-            <p>Brindar una formación académica integral y personalizada que permita a nuestros estudiantes superar los retos de los exámenes de admisión, fortalecer sus conocimientos escolares y desarrollar habilidades clave para su futuro. Ofrecemos clases preuniversitarias, dirigidas y tutorías con enfoque humano y pedagógico.</p>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="p-4 bg-light shadow rounded h-100">
-            <h3 class="text-success fw-bold">Nuestra Visión</h3>
-            <p>Ser reconocidos como el centro académico líder en formación preuniversitaria y nivelación escolar en Ecuador, transformando vidas a través de la educación, la innovación y el compromiso con la excelencia educativa desde los primeros niveles hasta la universidad.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Servicios -->
-    <section>
-      <h2 class="fw-bold text-azul text-center mb-4">Servicios que ofrecemos</h2>
-      <div class="row g-4">
-        <!-- Servicio Card -->
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
-            <img src="/images/asesoria.webp" class="card-img-top servicio-img" alt="Asesorías Académicas" loading="lazy" width="356" height="237">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Asesorías Académicas</h5>
-              <p class="card-text">Orientación y planificación del estudio para alcanzar tus objetivos académicos.</p>
-            </div>
-            <div class="card-overlay">
-              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalAsesoria">Ver más</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
-            <img src="/images/tutoria.webp" class="card-img-top servicio-img" alt="Nivelación y Tutorías" loading="lazy" width="356" height="237">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Nivelación y Tutorías</h5>
-              <p class="card-text">Refuerzo en asignaturas desde el nivel escolar hasta universitario.</p>
-            </div>
-            <div class="card-overlay">
-              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalTutoria">Ver más</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
-            <img src="/images/mate.webp" class="card-img-top servicio-img" alt="Clases de Matemáticas" loading="lazy" width="356" height="237">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Matemáticas y Cálculo</h5>
-              <p class="card-text">Tutorías personalizadas en Matemáticas, Geometría y Cálculo diferencial e integral.</p>
-            </div>
-            <div class="card-overlay">
-              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMate">Ver más</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
-            <img src="/images/quimica.webp" class="card-img-top servicio-img" alt="Clases de Ciencias" loading="lazy" width="356" height="237">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Física y Química</h5>
-              <p class="card-text">Refuerza tus conocimientos en ciencias con clases claras y aplicadas a tus exámenes.</p>
-            </div>
-            <div class="card-overlay">
-              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalCiencias">Ver más</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm servicio-card position-relative overflow-hidden">
-            <img src="/images/ingles.webp" class="card-img-top servicio-img" alt="Verbal e Inglés" loading="lazy" width="356" height="237">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Verbal e Inglés</h5>
-              <p class="card-text">Mejora tu comprensión lectora, redacción y habilidades en inglés para contextos académicos.</p>
-            </div>
-            <div class="card-overlay">
-              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalIngles">Ver más</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
-</main>
 
-<!-- Modales de Servicios -->
-<!-- Asesorías Académicas -->
-<div class="modal fade" id="modalAsesoria" tabindex="-1" aria-labelledby="modalAsesoriaLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalAsesoriaLabel">Asesorías Académicas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        Te ayudamos a definir estrategias de estudio personalizadas y organizadas para alcanzar tus metas educativas. Nuestro equipo profesional te guiará paso a paso en el proceso académico.
-      </div>
-      <div class="modal-footer">
-        <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
+  <!-- Nivelación y Tutorías -->
+  <div class="modal fade" id="modalTutoria" tabindex="-1" aria-labelledby="modalTutoriaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTutoriaLabel">Nivelación y Tutorías</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Clases dirigidas a estudiantes de escuela y colegio con enfoque en reforzar conocimientos clave. También
+          ofrecemos tutorías universitarias adaptadas al ritmo de cada alumno.
+        </div>
+        <div class="modal-footer">
+          <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Nivelación y Tutorías -->
-<div class="modal fade" id="modalTutoria" tabindex="-1" aria-labelledby="modalTutoriaLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalTutoriaLabel">Nivelación y Tutorías</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        Clases dirigidas a estudiantes de escuela y colegio con enfoque en reforzar conocimientos clave. También ofrecemos tutorías universitarias adaptadas al ritmo de cada alumno.
-      </div>
-      <div class="modal-footer">
-        <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
+  <!-- Matemáticas y Cálculo -->
+  <div class="modal fade" id="modalMate" tabindex="-1" aria-labelledby="modalMateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMateLabel">Matemáticas y Cálculo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Tutorías personalizadas en Álgebra, Geometría, Cálculo Diferencial e Integral. Pensadas para estudiantes de
+          secundaria o nivel universitario que necesitan claridad y dominio en matemáticas.
+        </div>
+        <div class="modal-footer">
+          <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Matemáticas y Cálculo -->
-<div class="modal fade" id="modalMate" tabindex="-1" aria-labelledby="modalMateLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalMateLabel">Matemáticas y Cálculo</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        Tutorías personalizadas en Álgebra, Geometría, Cálculo Diferencial e Integral. Pensadas para estudiantes de secundaria o nivel universitario que necesitan claridad y dominio en matemáticas.
-      </div>
-      <div class="modal-footer">
-        <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
+  <!-- Física y Química -->
+  <div class="modal fade" id="modalCiencias" tabindex="-1" aria-labelledby="modalCienciasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCienciasLabel">Física y Química</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Refuerza tus conocimientos en Ciencias Naturales con clases prácticas y dinámicas. Ideal para superar
+          evaluaciones escolares o exámenes preuniversitarios.
+        </div>
+        <div class="modal-footer">
+          <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Física y Química -->
-<div class="modal fade" id="modalCiencias" tabindex="-1" aria-labelledby="modalCienciasLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalCienciasLabel">Física y Química</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        Refuerza tus conocimientos en Ciencias Naturales con clases prácticas y dinámicas. Ideal para superar evaluaciones escolares o exámenes preuniversitarios.
-      </div>
-      <div class="modal-footer">
-        <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
+  <!-- Verbal e Inglés -->
+  <div class="modal fade" id="modalIngles" tabindex="-1" aria-labelledby="modalInglesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalInglesLabel">Verbal e Inglés</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Mejora tu redacción, comprensión lectora y habilidades comunicativas en inglés. Nuestras clases están
+          adaptadas a contextos escolares, universitarios o exámenes de ingreso.
+        </div>
+        <div class="modal-footer">
+          <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<!-- Verbal e Inglés -->
-<div class="modal fade" id="modalIngles" tabindex="-1" aria-labelledby="modalInglesLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalInglesLabel">Verbal e Inglés</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        Mejora tu redacción, comprensión lectora y habilidades comunicativas en inglés. Nuestras clases están adaptadas a contextos escolares, universitarios o exámenes de ingreso.
-      </div>
-      <div class="modal-footer">
-        <a href="#inscripcion" class="btn btn-warning">Contactar un asesor</a>
-      </div>
-    </div>
-  </div>
-</div>
   <!-- Footer -->
   <footer class="bg-light text-dark pt-4 border-top">
     <div class="container">
@@ -302,6 +322,9 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <a href="https://wa.me/593987238907" class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
 </body>
 
 </html>
