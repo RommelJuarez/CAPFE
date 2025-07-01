@@ -32,6 +32,9 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="styles/styles.css" />
@@ -78,7 +81,7 @@
   <!-- Sección Hero -->
   <section class="hero-container">
     <div class="hero-overlay"></div>
-    <div class="hero-content">
+    <div class="hero-content"data-aos="fade-up">
       <h1 class="display-4">
         Alcanza tu <span class="text-amarillo">máximo</span> potencial académico
       </h1>
@@ -114,12 +117,12 @@
     </section>
   </section>
   <!-- Sección de Servicios CAPFE -->
-  <section class="py-5 bg-light">
+  <section class="py-5 bg-light servicios">
     <div class="container text-center">
       <h2 class="fw-bold mb-5 text-uppercase">¿Qué incluye tu preparación con CAPFE?</h2>
       <div class="row g-4">
         <!-- Preuniversitario -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border-start border-4 border-warning shadow-sm">
             <div class="card-body d-flex flex-column">
               <i class="fas fa-graduation-cap fa-2x text-warning mb-3"></i>
@@ -131,7 +134,7 @@
           </div>
         </div>
         <!-- Tareas dirigidas -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border-start border-4 border-primary shadow-sm">
             <div class="card-body d-flex flex-column">
               <i class="fas fa-book-reader fa-2x text-primary mb-3"></i>
@@ -143,7 +146,7 @@
           </div>
         </div>
         <!-- Simuladores -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border-start border-4 border-success shadow-sm">
             <div class="card-body d-flex flex-column">
               <i class="fas fa-laptop-code fa-2x text-success mb-3"></i>
@@ -155,7 +158,7 @@
           </div>
         </div>
         <!-- Material de estudio -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border-start border-4 border-info shadow-sm">
             <div class="card-body d-flex flex-column">
               <i class="fas fa-book fa-2x text-info mb-3"></i>
@@ -167,7 +170,7 @@
           </div>
         </div>
         <!-- Profesores capacitados -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border-start-p border-4" style="border-color: #6f42c1;">
             <div class="card-body d-flex flex-column">
               <i class="fas fa-chalkboard-teacher fa-2x mb-3" style="color: #6f42c1;"></i>
@@ -180,7 +183,7 @@
           </div>
         </div>
         <!-- Acompañamiento constante -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border-start border-4 border-danger shadow-sm">
             <div class="card-body d-flex flex-column">
               <i class="fas fa-user-friends fa-2x text-danger mb-3"></i>
@@ -199,6 +202,76 @@
     </div>
   </section>
 
+<!-- Sección de Estadísticas CAPFE -->
+<section class="position-relative bg-dark text-white contado" style="background-image: url('/images/graduacion.webp'); background-size: cover; background-position: center; min-height: 500px;">
+  <div class="container position-relative">
+    <div class="row justify-content-end">
+      <div class="col-lg-6">
+        <div class="bg-white text-dark p-4 rounded shadow-lg mt-5" data-aos="fade-left">
+          <h3 class="fw-bold mb-4">Resultados que hablan por sí mismos</h3>
+          <div class="row text-center">
+            <!-- Estudiantes admitidos -->
+            <div class="col-12 col-md-4 mb-4">
+              <i class="fas fa-user-check fa-2x text-success mb-2"></i>
+              <h4 class="fw-bold"><span class="counter" data-count="95">0</span>%+</h4>
+              <p class="mb-0">Estudiantes admitidos</p>
+            </div>
+            <!-- Cupos universitarios -->
+            <div class="col-12 col-md-4 mb-4">
+              <i class="fas fa-university fa-2x text-primary mb-2"></i>
+              <h4 class="fw-bold">+<span class="counter" data-count="100">0</span></h4>
+              <p class="mb-0">Cupos en universidades</p>
+            </div>
+            <!-- Mejora de notas -->
+            <div class="col-12 col-md-4 mb-4">
+              <i class="fas fa-chart-line fa-2x text-warning mb-2"></i>
+              <h4 class="fw-bold"><span class="counter" data-count="90">0</span>%+</h4>
+              <p class="mb-0">Mejora sus notas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section class="py-5 contacto2" style="background-color: #e6b800;"> <!-- amarillo más oscuro -->
+  <div class="container">
+    <h2 class="fw-bold text-uppercase text-center mb-5 text-white">Contactos</h2>
+    <div class="row justify-content-center align-items-center g-4">
+      <!-- Información de contacto -->
+      <div class="col-md-5" data-aos="fade-right">
+        <div class="bg-white p-4 rounded shadow text-dark h-100">
+          <p><i class="fas fa-phone-alt me-2 text-success"></i><strong>Teléfonos:</strong></p>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2">
+              <span class="badge bg-success me-2">Activo</span>
+              <a href="https://wa.me/593987238907" class="text-dark text-decoration-none" target="_blank">0987238907</a>
+            </li>
+            <li class="mb-2">
+              <span class="badge bg-success me-2">Activo</span>
+              <a href="https://wa.me/593979561265" class="text-dark text-decoration-none" target="_blank">0979561265</a>
+            </li>
+          </ul>
+          <a href="https://wa.me/593987238907" class="btn btn-success fw-bold w-100" target="_blank">
+            <i class="fab fa-whatsapp me-2"></i>Contacta un asesor
+          </a>
+        </div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="col-md-5" data-aos="fade-left">
+        <div class="border rounded shadow overflow-hidden mx-auto" style="width: 100%; max-width: 560px; height: 400px;">
+          <iframe
+            src="https://www.google.com/maps?q=0°05'29.1%22S%2078°29'56.4%22W&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
   <!-- Footer -->
@@ -224,15 +297,17 @@
           <h5 class="fw-bold">Síguenos</h5>
           <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-4">
             <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/capf_e/" target="_blank" class="text-dark"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@capfe6?_t=ZM-8xViVFXccOG&_r=1" target="_blank" class="text-dark"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/capf_e/" target="_blank" class="text-dark"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@capfe6?_t=ZM-8xViVFXccOG&_r=1" target="_blank" class="text-dark"><i
+                class="fab fa-tiktok"></i></a>
           </div>
         </div>
       </div>
       <div class="text-center py-3 border-top mt-3">
         <small>&copy; 2025 CAPFE. Todos los derechos reservados.</small>
         <br>
-        <small> Hecho por: Rommel Juarez  0995168010</small>
+        <small> Hecho por: Rommel Juarez 0995168010</small>
       </div>
     </div>
   </footer>
@@ -242,6 +317,15 @@
   <a href="https://wa.me/593987238907" class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp">
     <i class="fab fa-whatsapp whatsapp-icon"></i>
   </a>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000, // duración de animación
+      once: true     // solo se anima una vez
+    });
+  </script>
+  <script src="/scripts/contador.js" defer></script>
 </body>
 
-</html> 
+</html>

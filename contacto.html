@@ -77,69 +77,72 @@
     <div class="bar-nav"></div>
   </div>
 
-<main class="py-5">
-  <div class="container">
-    <div class="row g-5">
-      <!-- Columna izquierda: Datos de contacto -->
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-4 text-azul">Información de Contacto</h2>
-        <p><i class="fas fa-map-marker-alt me-2 text-warning"></i><strong>Dirección:</strong> Quito, Ecuador</p>
-        <p><i class="fas fa-phone-alt me-2 text-success"></i><strong>Teléfonos:</strong></p>
-        <ul class="list-unstyled">
-          <li class="mb-2">
-            <span class="badge bg-success me-2">Activo</span> 0987238907
-          </li>
-          <li class="mb-2">
-            <span class="badge bg-success me-2">Activo</span> 0979561265
-          </li>
-        </ul>
-        
-        <div class="mt-4">
-          <a href="https://wa.me/593987238907" target="_blank" class="btn btn-warning fw-bold">
-            Contacta un asesor <i class="fas fa-comments ms-1"></i>
-          </a>
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Columna izquierda: Datos de contacto -->
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-4 text-azul">Información de Contacto</h2>
+          <p><i class="fas fa-map-marker-alt me-2 text-warning"></i><strong>Dirección:</strong> Quito, Ecuador</p>
+          <p><i class="fas fa-phone-alt me-2 text-success"></i><strong>Teléfonos:</strong></p>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <span class="badge bg-success me-2">Activo</span> 0987238907
+            </li>
+            <li class="mb-2">
+              <span class="badge bg-success me-2">Activo</span> 0979561265
+            </li>
+          </ul>
+
+          <div class="mt-4">
+            <a href="https://wa.me/593987238907" target="_blank" class="btn btn-warning fw-bold">
+              Contacta un asesor <i class="fas fa-comments ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario -->
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-4 text-azul" id="formulario">Formulario de Contacto</h2>
+          <form action="https://formspree.io/f/lemacondordayana@gmail.com" method="POST" target="hidden_iframe"
+            onsubmit="mostrarModal(); this.reset(); return false;">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="mb-3">
+              <label for="nombre" class="form-label fw-semibold">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="whatsapp" class="form-label fw-semibold">WhatsApp</label>
+              <input type="tel" class="form-control" id="whatsapp" name="whatsapp" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label fw-semibold">Mensaje (opcional)</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success fw-bold">
+              Enviar mensaje <i class="fas fa-paper-plane ms-1"></i>
+            </button>
+          </form>
+          <iframe name="hidden_iframe" style="display:none;"></iframe>
         </div>
       </div>
 
-      <!-- Columna derecha: Formulario -->
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-4 text-azul" id="formulario">Formulario de Contacto</h2>
-        <form>
-          <div class="mb-3">
-            <label for="nombre" class="form-label fw-semibold">Nombre y Apellido</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required>
-          </div>
-          <div class="mb-3">
-            <label for="whatsapp" class="form-label fw-semibold">WhatsApp</label>
-            <input type="tel" class="form-control" id="whatsapp" placeholder="Ej. 0991234567" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label fw-semibold">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" placeholder="Ej. correo@ejemplo.com" required>
-          </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label fw-semibold">Mensaje (opcional)</label>
-            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-success fw-bold">
-            Enviar mensaje <i class="fas fa-paper-plane ms-1"></i>
-          </button>
-        </form>
+      <!-- Mapa (Google Maps Embed) -->
+      <div class="mt-5">
+        <h3 class="fw-bold text-center mb-4">¿Dónde estamos ubicados?</h3>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.google.com/maps?q=0°05'29.1%22S%2078°29'56.4%22W&output=embed" width="100%"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
       </div>
     </div>
-
-    <!-- Mapa (Google Maps Embed) -->
-    <div class="mt-5">
-      <h3 class="fw-bold text-center mb-4">¿Dónde estamos ubicados?</h3>
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.google.com/maps?q=0°05'29.1%22S%2078°29'56.4%22W&output=embed"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </div>
-</main>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-light text-dark pt-4 border-top">
@@ -164,24 +167,46 @@
           <h5 class="fw-bold">Síguenos</h5>
           <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-4">
             <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/capf_e/" target="_blank" class="text-dark"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@capfe6?_t=ZM-8xViVFXccOG&_r=1" target="_blank" class="text-dark"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/capf_e/" target="_blank" class="text-dark"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@capfe6?_t=ZM-8xViVFXccOG&_r=1" target="_blank" class="text-dark"><i
+                class="fab fa-tiktok"></i></a>
           </div>
         </div>
       </div>
       <div class="text-center py-3 border-top mt-3">
         <small>&copy; 2025 CAPFE. Todos los derechos reservados.</small>
         <br>
-        <small> Hecho por: Rommel Juarez  0995168010</small>
+        <small> Hecho por: Rommel Juarez 0995168010</small>
       </div>
     </div>
   </footer>
-
+  <!-- Modal de agradecimiento -->
+  <div class="modal fade" id="graciasModal" tabindex="-1" aria-labelledby="graciasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="graciasModalLabel"><i class="fas fa-check-circle me-2"></i>¡Gracias por
+            contactarnos!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Pronto nuestro equipo se pondrá en contacto contigo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <a href="https://wa.me/593987238907" class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp">
     <i class="fab fa-whatsapp whatsapp-icon"></i>
   </a>
+  <script>
+  function mostrarModal() {
+    const modal = new bootstrap.Modal(document.getElementById('graciasModal'));
+    setTimeout(() => modal.show(), 500); // retrasa para dar tiempo a FormSubmit
+  }
+</script>
 </body>
 
 </html>
