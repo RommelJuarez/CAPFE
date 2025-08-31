@@ -1,384 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/images/favicon.png" type="image/png">
-  <title>CAPFE Preuniversitario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pronto volveremos | Paquio</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high">
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #FF6F3C, #FF9E3C);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
 
+    .container {
+      max-width: 600px;
+      background: rgba(0,0,0,0.4);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
 
-  <!-- Meta SEO -->
-  <meta name="description"
-    content="CAPFE - Prepárate para tu futuro. Conviértete en parte de CAPFE y logra tus metas universitarias." />
-  <meta name="keywords" content="CAPFE, universidad, admisión, simuladores, inscripción" />
-  <meta name="robots" content="index, follow" />
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
 
-  <!-- Redes Sociales / Open Graph -->
-  <meta property="og:title" content="CAPFE" />
-  <meta property="og:description" content="Prepárate para tu futuro con CAPFE" />
-  <meta property="og:image" content="/images/logo.jpeg" />
-  <meta property="og:url" content="https://capfedu.com/" />
-  <meta property="og:type" content="website" />
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CAPFE" />
-  <meta name="twitter:description" content="Prepárate para tu futuro con CAPFE" />
-  <meta name="twitter:image" content="/images/logo.jpeg" />
+    a.button {
+      display: inline-block;
+      text-decoration: none;
+      color: #FF6F3C;
+      background: #fff;
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    a.button:hover {
+      background: #FFBB88;
+      color: #fff;
+    }
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #ffe8d1;
+    }
 
-
-  <!-- CSS personalizado -->
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="stylesheet" href="styles/index.css" />
-  <link rel="stylesheet" href="styles/videos.css" />
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Contenedor Sticky para Navbar + Barra secundaria -->
-  <div class="sticky-top">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="/images/logo.jpeg" class="logo-main" alt="Logo CAPFE" height="100">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
-          aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTop">
-          <ul class="navbar-nav me-4 mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link nav-link-custom active" href="/index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="/nostros.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="/admision.html">Admisión</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="/simuladores.html">Simuladores</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="/contacto.html">Contacto</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="/asistencia.html">Asistencia</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="/horarios.html">Planificación </a></li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="/admision.html" class="btn btn-warning fw-bold">
-              ¡Inscríbete ahora!
-            </a>
-            <a href="/contacto.html" class="btn btn-outline-secondary fw-bold">
-              Contáctanos
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Barra secundaria -->
-    <div class="bar-nav"></div>
+  <div class="container">
+    <h1>Pronto volveremos </h1>
+    <p>Estamos trabajando en algo increíble para tu negocio. Mientras tanto, puedes conocer nuestra marca y cómo ayudamos a desarrollar sistemas completos y páginas web profesionales.</p>
+    <a class="button" href="https://paquio.web.app/" target="_blank">Visitar Paquio</a>
+    <footer>
+      &copy; 2025 Paquio - Soluciones digitales para tu negocio
+    </footer>
   </div>
-
-  <!-- Sección Hero -->
-  <section class="hero-container">
-    <div class="hero-overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
-      <h1 class="display-4">
-        Alcanza tu <span class="text-amarillo">máximo</span> potencial académico
-      </h1>
-      <p class="lead">
-        Clases preuniversitarias y dirigidas para estudiantes de colegio. En CAPFE te preparamos para ingresar y
-        destacar.
-      </p>
-      <a href="/admision.html" class="cta-button btn">¡Inscríbete ahora!</a>
-    </div>
-    <section class="logo-carousel  overflow-hidden">
-      <div class="carousel-track">
-        <div class="carousel-slide">
-          <img src="/images/logosuni/espe.png" alt="ESPE" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/espol.png" alt="ESPOL" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/puce.png" alt="PUCE" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/salesiana.png" alt="SALESIANA" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/uce.png" alt="UCE" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/udla.png" alt="UDLA" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/usfq.png" alt="USFQ" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/ute.png" alt="UTE" class="logo-img" loading="lazy">
-
-          <img src="/images/logosuni/espe.png" alt="ESPE" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/espol.png" alt="ESPOL" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/puce.png" alt="PUCE" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/salesiana.png" alt="SALESIANA" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/uce.png" alt="UCE" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/udla.png" alt="UDLA" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/usfq.png" alt="USFQ" class="logo-img" loading="lazy">
-          <img src="/images/logosuni/ute.png" alt="UTE" class="logo-img" loading="lazy">
-        </div>
-
-      </div>
-    </section>
-  </section>
-  <!-- Sección de Servicios CAPFE -->
-  <section class="py-5 bg-light servicios">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-5 text-uppercase">¿Qué incluye tu preparación con CAPFE?</h2>
-      <div class="row g-4">
-        <!-- Preuniversitario -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 border-start border-4 border-warning shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <i class="fas fa-graduation-cap fa-2x text-warning mb-3"></i>
-              <h5 class="card-title fw-bold">Curso Preuniversitario</h5>
-              <p class="card-text flex-grow-1">Te preparamos para los exámenes de admisión con clases actualizadas,
-                docentes expertos y acompañamiento constante.</p>
-              <a href="/admision.html" class="btn btn-warning fw-bold mt-3">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <!-- Tareas dirigidas -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 border-start border-4 border-primary shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <i class="fas fa-book-reader fa-2x text-primary mb-3"></i>
-              <h5 class="card-title fw-bold">Tareas Dirigidas</h5>
-              <p class="card-text flex-grow-1">Apoyo escolar personalizado para reforzar tus conocimientos y mejorar tu
-                rendimiento académico.</p>
-              <a href="/admision.html" class="btn btn-primary fw-bold mt-3">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <!-- Simuladores -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 border-start border-4 border-success shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <i class="fas fa-laptop-code fa-2x text-success mb-3"></i>
-              <h5 class="card-title fw-bold">Simuladores</h5>
-              <p class="card-text flex-grow-1">Accede a simuladores reales para practicar como si estuvieras en el
-                examen oficial. Evalúa tu progreso.</p>
-              <a href="/simuladores.html" class="btn btn-success fw-bold mt-3">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <!-- Material de estudio -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 border-start border-4 border-info shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <i class="fas fa-book fa-2x text-info mb-3"></i>
-              <h5 class="card-title fw-bold">Material de estudio</h5>
-              <p class="card-text flex-grow-1">Recibirás guías, cuadernos y recursos físicos y digitales diseñados por
-                nuestros expertos.</p>
-              <a href="/simuladores.html" class="btn btn-info fw-bold mt-3">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <!-- Profesores capacitados -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 border-start-p border-4" style="border-color: #6f42c1;">
-            <div class="card-body d-flex flex-column">
-              <i class="fas fa-chalkboard-teacher fa-2x mb-3" style="color: #6f42c1;"></i>
-              <h5 class="card-title fw-bold">Profesores capacitados</h5>
-              <p class="card-text flex-grow-1">Docentes de alto nivel, con experiencia en exámenes de admisión y
-                formación pedagógica. Garantizamos calidad educativa.</p>
-              <a href="/nostros.html" class="btn fw-bold mt-3" style="background-color: #6f42c1; color: white;">Ver
-                más</a>
-            </div>
-          </div>
-        </div>
-        <!-- Acompañamiento constante -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card h-100 border-start border-4 border-danger shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <i class="fas fa-user-friends fa-2x text-danger mb-3"></i>
-              <h5 class="card-title fw-bold">Acompañamiento constante</h5>
-              <p class="card-text flex-grow-1">Nuestro equipo te guía en cada etapa de tu preparación, con asesoría
-                personalizada y seguimiento continuo.</p>
-              <a href="/nostros.html" class="btn btn-danger fw-bold mt-3">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-5">
-        <a href="admision.html" class="btn btn-warning btn-lg fw-bold">¡Inscríbete ahora!</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección de Estadísticas CAPFE -->
-  <section class="position-relative bg-dark text-white contado"
-    style="background-image: url('/images/graduacion.webp'); background-size: cover; background-position: center; min-height: 500px;">
-    <div class="container position-relative">
-      <div class="row justify-content-end">
-        <div class="col-lg-6">
-          <div class="bg-white text-dark p-4 rounded shadow-lg mt-5" data-aos="fade-left">
-            <h3 class="fw-bold mb-4">Resultados que hablan por sí mismos</h3>
-            <div class="row text-center">
-              <!-- Estudiantes admitidos -->
-              <div class="col-12 col-md-4 mb-4">
-                <i class="fas fa-user-check fa-2x text-success mb-2"></i>
-                <h4 class="fw-bold"><span class="counter" data-count="95">0</span>%+</h4>
-                <p class="mb-0">Estudiantes admitidos</p>
-              </div>
-              <!-- Cupos universitarios -->
-              <div class="col-12 col-md-4 mb-4">
-                <i class="fas fa-university fa-2x text-primary mb-2"></i>
-                <h4 class="fw-bold">+<span class="counter" data-count="100">0</span></h4>
-                <p class="mb-0">Cupos en universidades</p>
-              </div>
-              <!-- Mejora de notas -->
-              <div class="col-12 col-md-4 mb-4">
-                <i class="fas fa-chart-line fa-2x text-warning mb-2"></i>
-                <h4 class="fw-bold"><span class="counter" data-count="90">0</span>%+</h4>
-                <p class="mb-0">Mejora sus notas</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Sección de Videos TikTok -->
-  <section class="py-5 videos-section">
-    <div class="container">
-      <h2 class="fw-bold text-uppercase text-center mb-5 text-white">Conoce más sobre CAPFE</h2>
-      <div class="row justify-content-center g-4">
-
-        <!-- Video TikTok 1 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="tiktok-video-container">
-            <div class="tiktok-frame">
-              <blockquote class="tiktok-embed " cite="https://www.tiktok.com/@profe_mateoo/video/7461705803246914821"
-                data-video-id="7461705803246914821" style="max-width: 100%; min-width: 220px;">
-                <section>
-                  <a target="_blank" title="@profe_mateoo"
-                    href="https://www.tiktok.com/@profe_mateoo?refer=embed">@profe_mateoo</a>
-                  <a title="#preuniversitario" href="https://www.tiktok.com/tag/preuniversitario">#preuniversitario</a>
-                </section>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <!-- Video TikTok 2 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="tiktok-video-container">
-            <div class="tiktok-frame">
-              <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@profe_mateoo/video/7469909758128966967"
-                data-video-id="7469909758128966967" style="max-width: 100%; min-width: 220px;">
-                <section>
-                  <a target="_blank" title="@profe_mateoo"
-                    href="https://www.tiktok.com/@profe_mateoo?refer=embed">@profe_mateoo</a>
-                  <a title="#universidad" href="https://www.tiktok.com/tag/universidad">#universidad</a>
-                </section>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Sección de Contacto -->
-  <section class="py-5 contacto2" style="background-color: #e6b800;"> <!-- amarillo más oscuro -->
-    <div class="container">
-      <h2 class="fw-bold text-uppercase text-center mb-5 text-white">Contactos</h2>
-      <div class="row justify-content-center align-items-center g-4">
-        <!-- Información de contacto -->
-        <div class="col-md-5" data-aos="fade-right">
-          <div class="bg-white p-4 rounded shadow text-dark h-100">
-            <p><i class="fas fa-phone-alt me-2 text-success"></i><strong>Teléfonos:</strong></p>
-            <ul class="list-unstyled mb-4">
-              <li class="mb-2">
-                <span class="badge bg-success me-2">Activo</span>
-                <a href="https://wa.me/593987238907" class="text-dark text-decoration-none"
-                  target="_blank">0987238907</a>
-              </li>
-              <li class="mb-2">
-                <span class="badge bg-success me-2">Activo</span>
-                <a href="https://wa.me/593979561265" class="text-dark text-decoration-none"
-                  target="_blank">0979561265</a>
-              </li>
-            </ul>
-            <a href="https://wa.me/593987238907" class="btn btn-success fw-bold w-100" target="_blank">
-              <i class="fab fa-whatsapp me-2"></i>Contacta un asesor
-            </a>
-          </div>
-        </div>
-
-        <!-- Mapa -->
-        <div class="col-md-5" data-aos="fade-left">
-          <div class="border rounded shadow overflow-hidden mx-auto"
-            style="width: 100%; max-width: 560px; height: 400px;">
-            <iframe src="https://www.google.com/maps?q=0°05'29.1%22S%2078°29'56.4%22W&output=embed" width="100%"
-              height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="bg-light text-dark pt-4 border-top">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <div class="col-md-4 mb-4">
-          <img src="/images/logo.jpeg" alt="Logo CAPFE" height="70" class="mb-2">
-          <p>CAPFE es tu mejor aliado para alcanzar tus metas académicas. Cursos preuniversitarios, nivelaciones y más.
-          </p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5 class="fw-bold">Enlaces</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-decoration-none text-dark">Inicio</a></li>
-            <li><a href="nostros.html" class="text-decoration-none text-dark">Nosotros</a></li>
-            <li><a href="admision.html" class="text-decoration-none text-dark">Admisión</a></li>
-            <li><a href="simuladores.html" class="text-decoration-none text-dark">Simuladores</a></li>
-            <li><a href="contacto.html" class="text-decoration-none text-dark">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5 class="fw-bold">Síguenos</h5>
-          <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-4">
-            <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/capf_e/" target="_blank" class="text-dark"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@capfe6?_t=ZM-8xViVFXccOG&_r=1" target="_blank" class="text-dark"><i
-                class="fab fa-tiktok"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="text-center py-3 border-top mt-3">
-        <small>&copy; 2025 CAPFE. Todos los derechos reservados.</small>
-        <br>
-        <small> Hecho por: Rommel Juarez 0995168010</small>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <a href="https://wa.me/593987238907" class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp">
-    <i class="fab fa-whatsapp whatsapp-icon"></i>
-  </a>
-  <!-- AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 2000, // duración de animación
-      once: true     // solo se anima una vez
-    });
-  </script>
-  <script src="/scripts/contador.js" defer></script>
-  <!-- Solo una vez en tu página -->
-  <script async src="https://www.tiktok.com/embed.js"></script>
 </body>
-
 </html>
